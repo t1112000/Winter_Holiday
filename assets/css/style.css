@@ -1,4 +1,8 @@
-.diep {
+.trung {
   display: flex;
   align-items: center;
+}
+
+.trung img {
+  height: 300px;
 }
