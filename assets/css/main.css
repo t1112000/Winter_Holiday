@@ -1,0 +1,18 @@
+body {
+  font-family: "Audiowide", sans-serif;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__col-2-5 {
+  width: 25%;
+}
