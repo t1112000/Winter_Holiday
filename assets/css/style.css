@@ -1,0 +1,341 @@
+/* ----------------- Header ---------------- */
+
+/* Header Logo */
+.header {
+  height: 80px;
+  margin: 0 20px;
+  justify-content: center;
+}
+
+.header__logo-img {
+  height: 47px;
+  width: 147px;
+  margin: 20px 0;
+}
+
+/* Header Navbar */
+.header__navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.header__navbar-link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 32px 39px;
+  position: relative;
+}
+
+.header__navbar-link:hover {
+  color: var(--skyblue-color);
+}
+
+.header__navbar-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--skyblue-color);
+  top: 100%;
+  left: 0;
+  transition: linear 0.2s;
+}
+
+.header__navbar-link:hover::before {
+  width: 100%;
+}
+/* Sub Nav */
+.header-sub__navbar-link {
+  position: relative;
+  width: fit-content;
+  /* width: max-content; */
+}
+
+.header-sub__navbar-link:hover {
+  color: var(--skyblue-color);
+  font-weight: 600;
+}
+
+.header-sub__navbar-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 100%;
+  background-color: var(--skyblue-color);
+  left: 0;
+  transition: linear 0.2s;
+}
+
+.header-sub__navbar-link:hover::before {
+  width: 100%;
+}
+
+.header__navbar-item:hover .header-sub__navbar-list {
+  display: block;
+}
+
+.header-sub__navbar-list {
+  position: absolute;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 0;
+  padding: 24px 0;
+  min-width: 257px;
+  border-top: none;
+  display: none;
+  z-index: 1;
+}
+.header-sub__navbar-item {
+  padding: 8px 35px;
+  cursor: pointer;
+  position: relative;
+}
+.header-sub__navbar-link {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+/* Full Nav */
+.header-full__navbar-list {
+  list-style: none;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: none;
+  right: 15%;
+  width: 65%;
+  padding-left: 0;
+  padding: 32px 0 32px 0px;
+  display: none;
+  z-index: 1;
+}
+
+.header__navbar-item:hover .header-full__navbar-list {
+  display: block;
+}
+
+.header-full-navbar-name {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 16px 0;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+}
+
+.header-full-navbar-name::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  background-color: var(--skyblue-color);
+  transition: linear 0.2s;
+}
+
+.header-full-navbar-name:hover::before {
+  width: 100%;
+}
+
+.header-full__navbar-link {
+  text-decoration: none;
+  color: var(--skyblue-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+
+.header-full__navbar-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: var(--skyblue-color);
+  left: 0;
+  transition: linear 0.2s;
+}
+
+.header-full__navbar-link:hover::before {
+  width: 100%;
+}
+
+/* Right Nav */
+.header-sub__navbar-right {
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.header-sub__navbar-right:hover {
+  color: var(--skyblue-color);
+}
+
+.header-sub__navbar-icon-right {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.header-right__navbar {
+  position: absolute;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 0;
+  padding: 24px 0;
+  min-width: 257px;
+  display: none;
+  top: 0;
+  left: 100%;
+}
+
+.header-right__navbar-item {
+  padding: 8px 35px;
+}
+.header-right__navbar-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  position: relative;
+  display: block;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.header-right__navbar-link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  left: 0;
+  top: 100%;
+  background-color: var(--skyblue-color);
+  transition: linear 0.2s;
+}
+
+.header-right__navbar-link:hover::before {
+  width: 100%;
+}
+
+.header-sub__navbar-item:hover .header-right__navbar {
+  display: block;
+}
+
+/* Left Nav */
+.header-left__navbar {
+  position: absolute;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 0;
+  padding: 24px 0;
+  min-width: 257px;
+  top: 0;
+  right: 100%;
+  display: none;
+}
+
+.header-sub__navbar-item:hover .header-left__navbar {
+  display: block;
+}
+
+.header-left__navbar-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  position: relative;
+  display: block;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.header-left__navbar-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 100%;
+  background-color: var(--skyblue-color);
+  transition: linear 0.2s;
+}
+
+.header-left__navbar-link:hover::before {
+  width: 100%;
+}
+
+.header-left__navbar-item {
+  padding: 8px 35px;
+}
+
+.header-sub__navbar-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none;
+}
+
+.header-sub__navbar-icon-left {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.header-sub__navbar-left:hover {
+  color: var(--skyblue-color);
+}
+/* Header Menu */
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  cursor: default;
+}
+
+.header__menu-icon:hover {
+  color: var(--skyblue-color);
+}
+
+.header__menu-icon {
+  display: block;
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 30px 8px;
+  margin-right: 12px;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.header-cart {
+  position: absolute;
+  top: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: none;
+  min-width: 257px;
+  right: 50%;
+  padding: 30px 25px;
+  display: none;
+}
+
+.header-cart__link:hover .header-cart {
+  display: block;
+}
+
+.header-cart__name {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--text-color);
+}

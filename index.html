@@ -11,72 +11,544 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <div class="header__logo"></div>
+    <div class="main">
+      <header class="header">
+        <div class="grid__full">
+          <div class="grid__row">
+            <div class="grid__col-2">
+              <div class="header__logo">
+                <img
+                  src="assets/images/logo.png"
+                  alt=""
+                  class="header__logo-img"
+                />
+              </div>
+            </div>
 
-      <div class="grid">
-        <nav class="header__navbar">
-          <!-- <ul class="header__navbar-list">
-            <li class="header__navbar-item">
-              <a class="header__navbar-item-link" href="#"></a>
-            </li>
+            <div class="grid__col-8">
+              <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-link" href="#">Home</a>
 
-            <li class="header__navbar-item">
-              <a class="header__navbar-item-link" href="#"></a>
-            </li>
+                    <ul class="header-sub__navbar-list">
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Travel Agency</a
+                        >
+                      </li>
 
-            <li class="header__navbar-item">
-              <a class="header__navbar-item-link" href="#"></a>
-            </li>
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Winter Holidays</a
+                        >
+                      </li>
 
-            <li class="header__navbar-item">
-              <a class="header__navbar-item-link" href="#"></a>
-            </li>
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Exotic Destinations</a
+                        >
+                      </li>
 
-            <li class="header__navbar-item">
-              <a class="header__navbar-item-link" href="#"></a>
-            </li>
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Summer Holidays</a
+                        >
+                      </li>
 
-            <li class="header__navbar-item">
-              <a class="header__navbar-item-link" href="#"></a>
-            </li>
-          </ul> -->
-        </nav>
-      </div>
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >City Tours</a
+                        >
+                      </li>
 
-      <div class="header__menu">
-        <a href="#" class="header__menu-link">
-          <i class=""></i>
-        </a>
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >New Year Trips</a
+                        >
+                      </li>
 
-        <a href="#" class="header__menu-link">
-          <i class=""></i>
-        </a>
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Destinations Carousel</a
+                        >
+                      </li>
 
-        <a href="#" class="header__menu-link">
-          <i class=""></i>
-        </a>
-      </div>
-    </header>
-    <div class="container"></div>
-    <footer class="footer"></footer>
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Wine Tours</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Vacation Showcase</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link">Landing</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-link" href="#">Pages</a>
+
+                    <ul class="header-sub__navbar-list">
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link">About Us</a>
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >What We Offer</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link">Our Team</a>
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Get In Touch</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Contact Us</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link">FAQ Page</a>
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Coming Soon</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Error Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-link" href="#">Destinations</a>
+
+                    <ul class="header-sub__navbar-list">
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Destination List</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Destination Slider</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Destination Item</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-link" href="#">Tours</a>
+
+                    <ul class="header-sub__navbar-list">
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Standard List</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Gallery List</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Split LIst</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link">Tour Item</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-link" href="#">Blog</a>
+
+                    <ul class="header-sub__navbar-list">
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-link"
+                          >Blog Masonry</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-right">
+                          <span class="header-sub__navbar-link"
+                            >Blog Standard</span
+                          >
+                          <i
+                            class="header-sub__navbar-icon-right ti-angle-right"
+                          ></i>
+                        </a>
+
+                        <ul class="header-right__navbar">
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Right Sidebar</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Left Sidebar</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Without Sidebar</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-right">
+                          <span class="header-sub__navbar-link"
+                            >Post Types
+                          </span>
+                          <i
+                            class="header-sub__navbar-icon-right ti-angle-right"
+                          ></i>
+                        </a>
+
+                        <ul class="header-right__navbar">
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Standard</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Gallery</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Link</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Quote</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Video</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >Audio</a
+                            >
+                          </li>
+
+                          <li class="header-right__navbar-item">
+                            <a href="" class="header-right__navbar-link"
+                              >No Sidebar</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-link" href="#">Shop</a>
+
+                    <ul class="header-sub__navbar-list">
+                      <li class="header-sub__navbar-item">
+                        <a
+                          href=""
+                          class="header-sub__navbar-link"
+                          style="margin-left: auto"
+                          >Product List</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a
+                          href=""
+                          class="header-sub__navbar-link"
+                          style="margin-left: auto"
+                          >Product Single</a
+                        >
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-left">
+                          <i
+                            class="header-sub__navbar-icon-left ti-angle-left"
+                          ></i>
+                          <span class="header-sub__navbar-link"
+                            >Shop Layouts</span
+                          >
+                        </a>
+
+                        <ul class="header-left__navbar">
+                          <li class="header-left__navbar-item">
+                            <a href="" class="header-left__navbar-link"
+                              >Three Columns</a
+                            >
+                          </li>
+
+                          <li class="header-left__navbar-item">
+                            <a href="" class="header-left__navbar-link"
+                              >Four Columns</a
+                            >
+                          </li>
+
+                          <li class="header-left__navbar-item">
+                            <a href="" class="header-left__navbar-link"
+                              >Full Width</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="header-sub__navbar-item">
+                        <a href="" class="header-sub__navbar-left">
+                          <i
+                            class="header-sub__navbar-icon-left ti-angle-left"
+                          ></i>
+                          <span class="header-sub__navbar-link"
+                            >Shop Pages</span
+                          >
+                        </a>
+
+                        <ul class="header-left__navbar">
+                          <li class="header-left__navbar-item">
+                            <a href="" class="header-left__navbar-link"
+                              >My account</a
+                            >
+                          </li>
+
+                          <li class="header-left__navbar-item">
+                            <a href="" class="header-left__navbar-link">Cart</a>
+                          </li>
+
+                          <li class="header-left__navbar-item">
+                            <a href="" class="header-left__navbar-link"
+                              >Checkout</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-link" href="#">Elements</a>
+
+                    <ul class="header-full__navbar-list">
+                      <div class="grid grid__row">
+                        <li class="grid__col-2-5">
+                          <a href="" class="header-full__navbar-link"
+                            >FEATURE</a
+                          >
+
+                          <a href="" class="header-full-navbar-name"
+                            >Tour List</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Tour Carousel</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Tours Filter</a
+                          >
+                          <a href="" class="header-full-navbar-name">
+                            Destination With Tours
+                          </a>
+                          <a href="" class="header-full-navbar-name">
+                            Destination Fullscreen Slider
+                          </a>
+                          <a href="" class="header-full-navbar-name">
+                            Fullscreen Sections
+                          </a>
+                          <a href="" class="header-full-navbar-name">
+                            Reviews Carousel
+                          </a>
+                          <a href="" class="header-full-navbar-name">
+                            Reviews Carousel
+                          </a>
+                        </li>
+
+                        <li class="grid__col-2-5">
+                          <a href="" class="header-full__navbar-link"
+                            >PRESENTATION</a
+                          >
+
+                          <a href="" class="header-full-navbar-name">Team</a>
+                          <a href="" class="header-full-navbar-name"
+                            >Blog List</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Shoa List</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Testimonials</a
+                          >
+                          <a href="" class="header-full-navbar-name">Banner</a>
+                          <a href="" class="header-full-navbar-name">Client</a>
+                          <a href="" class="header-full-navbar-name">
+                            Parallax Section
+                          </a>
+                          <a href="" class="header-full-navbar-name"
+                            >Video Button</a
+                          >
+                        </li>
+
+                        <li class="grid__col-2-5">
+                          <a href="" class="header-full__navbar-link"
+                            >CLASSIC</a
+                          >
+
+                          <a href="" class="header-full-navbar-name"
+                            >Accordions</a
+                          >
+                          <a href="" class="header-full-navbar-name">Tabs</a>
+                          <a href="" class="header-full-navbar-name">Buttons</a>
+                          <a href="" class="header-full-navbar-name"
+                            >Google Maas</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Contact Form</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Progress Bar</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Countdown</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Counters</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Call To Action</a
+                          >
+                        </li>
+
+                        <li class="grid__col-2-5">
+                          <a href="" class="header-full__navbar-link"
+                            >TYPOGRAPHY</a
+                          >
+
+                          <a href="" class="header-full-navbar-name"
+                            >Headings</a
+                          >
+                          <a href="" class="header-full-navbar-name">Columns</a>
+                          <a href="" class="header-full-navbar-name"
+                            >Section Title</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Blockquote</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Droacaas</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Highlights</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Icon with text</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Seaarators</a
+                          >
+                          <a href="" class="header-full-navbar-name"
+                            >Custom Font</a
+                          >
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="grid__col-2">
+              <div class="header__menu">
+                <div class="header-cart__link">
+                  <a href="#" class="header__menu-link">
+                    <i class="header__menu-icon ti-shopping-cart"></i>
+                  </a>
+
+                  <div class="header-cart">
+                    <span class="header-cart__name"
+                      >No products in the cart.</span
+                    >
+                  </div>
+                </div>
+
+                <a href="#" class="header__menu-link">
+                  <i class="header__menu-icon ti-search"></i>
+                </a>
+
+                <a href="#" class="header__menu-link">
+                  <i class="header__menu-icon ti-menu"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container"></div>
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>
