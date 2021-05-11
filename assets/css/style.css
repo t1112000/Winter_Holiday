@@ -366,7 +366,6 @@
 /* Banner */
 .container {
   position: relative;
-  overflow: hidden;
 }
 
 .container__banner {
@@ -374,21 +373,22 @@
 }
 
 .container__banner-item {
-  height: 43vh;
+  height: 540px;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
+  overflow: hidden;
 }
 
 .container__banner-img {
   width: 100%;
   max-height: 540px;
   position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, -77%);
-  animation: zoom-in 12s linear infinite;
+  left: 0;
+  top: 0;
+  transform: scale(1.2);
+  transition: 22s;
 }
 
 .content__banner {
@@ -398,12 +398,9 @@
   align-items: center;
   position: absolute;
   color: var(--white-color);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  transform: translate(-50%, 15%);
-  animation: textup 4s linear infinite;
-  transform-origin: 25% top;
+  top: 25%;
+  left: 0;
+  animation: textup 3s linear;
   width: 100%;
 }
 
@@ -428,11 +425,19 @@
 }
 
 .banner1 {
-  animation: Slider1 8s linear infinite;
+  animation: Slider1 12s linear infinite;
 }
 
 .banner2 {
-  animation: Slider2 8s linear infinite;
+  animation: Slider2 12s linear infinite;
+}
+
+.banner3 {
+  animation: Slider3 12s linear infinite;
+}
+
+.banner4 {
+  animation: Slider4 12s linear infinite;
 }
 
 .container__banner-btn-left {
@@ -480,13 +485,22 @@
   position: relative;
   margin: 20px -24px 20px 0;
 }
-
+.zoom_tour-img {
+  overflow: hidden;
+  height: 215px;
+  width: 100%;
+}
 .tour-img {
   width: 100%;
   height: 215px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   position: relative;
+}
+
+.tour-img:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .tour-item {
