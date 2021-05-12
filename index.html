@@ -561,10 +561,10 @@
                     alt=""
                     class="container__banner-img"
                   />
-                  <button class="container__banner-btn-left" onclick="plusDivs(-1)">
+                  <button type="radio" class="container__banner-btn-left">
                     <i class="ti-angle-left"></i>
                   </button>
-                  <button class="container__banner-btn-right" onclick="plusDivs(1)">
+                  <button type="radio" class="container__banner-btn-right">
                     <i class="ti-angle-right"></i>
                   </button>
                   <div class="content__banner">
@@ -597,9 +597,8 @@
           
           <!-- Tour -->
           <div class="grid__row">
-            <div class="container__tour">
-              <div class="grid__full">
-                <div class="grid__row">
+            <div class="container__tour" style="overflow: hidden;">
+                <div class="grid__row" style="flex-wrap: nowrap;">
                   <div class="grid__col-2-5">
                     <div class="tour-item">
                       <div class="zoom_tour-img">
@@ -764,7 +763,7 @@
                   </div>
     
                   <div class="grid__col-2-5">
-                    <div class="tour-item">
+                    <div class="tour-item" style="margin-right: 0;">
                       <div class="zoom_tour-img">
                         <img src="./assets/images/1.jpg" alt="" class="tour-img" />
                       </div>
@@ -807,8 +806,8 @@
 
                 <div class="grid__row">
                   <div class="container__tour-btn">
-                    <button class="tour-btn"></button>
-                    <button class="tour-btn"></button>
+                    <button id="radio1" class="tour-btn"></button>
+                    <button id="radio1" class="tour-btn"></button>
                   </div>
                 </div>
               </div>
@@ -859,7 +858,7 @@
                   </div>
 
                   <div class="grid__col-2-3">
-                    <div class="container__reviews-item">
+                    <div class="container__reviews-item ml-24 mr-24">
                       <img class="container__reviews-img" src="./assets/images/logo-people7.png" alt="">
     
                       <div class="container__reviews-list">
@@ -913,6 +912,7 @@
               </div>
               <div class="container__holiday-content">
                 <div class="grid__col-2-4">
+
                   <div class="container__holiday-item">
                     <img class="container__holiday-img" src="./assets/images/camera.png" alt="">
                     <span class="container__holiday-name">Restaurants</span>
@@ -921,6 +921,7 @@
                 </div>
 
                 <div class="grid__col-2-4">
+
                   <div class="container__holiday-item">
                     <img class="container__holiday-img" src="./assets/images/local.png" alt="">
                     <span class="container__holiday-name">Sightseeing</span>
@@ -929,6 +930,7 @@
                 </div>
 
                 <div class="grid__col-2-4">
+
                   <div class="container__holiday-item">
                     <img class="container__holiday-img" src="./assets/images/building.png" alt="">
                     <span class="container__holiday-name">Shop & Boutiques</span>
@@ -937,6 +939,7 @@
                 </div>
 
                 <div class="grid__col-2-4">
+
                   <div class="container__holiday-item">
                     <img class="container__holiday-img" src="./assets/images/address.png" alt="">
                     <span class="container__holiday-name">Where to Stay</span>
@@ -946,48 +949,240 @@
               </div>
             </div>
           </div>
+
+          <div class="grid__row">
+            <div class="grid__row">
+              <div class="container__info">
+                  <div class="grid__col-2-4">
+                    <div class="container_info-item">
+                      <img src="./assets/images/people1.jpg" class="container__info-img" alt="">
+      
+                      <div class="container__info-content">
+                        <div class="container__list-text">
+                          <h5 class="container__info-name">Jack Burton</h5>
+                          <span class="container__info-text">Ped ut perspicols uncle annis instle natus error sit voluptatem lorem</span>
+                        </div>
+                        <div class="container__info-list-icon">
+                          <i class="container__info-icon ti-twitter-alt"></i>
+                          <i class="container__info-icon ti-pinterest"></i>
+                          <i class="container__info-icon ti-facebook"></i>
+                          <i class="container__info-icon ti-instagram"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="grid__col-2-4">
+                    <div class="container_info-item">
+                      <img src="./assets/images/people4.jpg" class="container__info-img" alt="">
+      
+                      <div class="container__info-content">
+                        <div class="container__list-text">
+                          <h5 class="container__info-name">Grace West</h5>
+                          <span class="container__info-text">Ped ut perspicols uncle annis instle natus error sit voluptatem lorem</span>
+                        </div>
+                        <div class="container__info-list-icon">
+                          <i class="container__info-icon ti-twitter-alt"></i>
+                          <i class="container__info-icon ti-pinterest"></i>
+                          <i class="container__info-icon ti-facebook"></i>
+                          <i class="container__info-icon ti-instagram"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="grid__col-2-4">
+                    <div class="container_info-item">
+                      <img src="./assets/images/people3.jpg" class="container__info-img" alt="">
+      
+                      <div class="container__info-content">
+                        <div class="container__list-text">
+                          <h5 class="container__info-name">Joe Avery</h5>
+                          <span class="container__info-text">Ped ut perspicols uncle annis instle natus error sit voluptatem lorem</span>
+                        </div>
+      
+                          <div class="container__info-list-icon">
+                            <i class="container__info-icon ti-twitter-alt"></i>
+                            <i class="container__info-icon ti-pinterest"></i>
+                            <i class="container__info-icon ti-facebook"></i>
+                            <i class="container__info-icon ti-instagram"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="grid__col-2-4">
+                    <div class="container_info-item">
+                      <img src="./assets/images/people2.jpg" class="container__info-img" alt="">
+  
+                      <div class="container__info-content">
+                        <div class="container__list-text">
+                          <h5 class="container__info-name">Bella Larson</h5>
+                          <span class="container__info-text">Ped ut perspicols uncle annis instle natus error sit voluptatem lorem</span>
+                        </div>
+  
+                          <div class="container__info-list-icon">
+                            <i class="container__info-icon ti-twitter-alt"></i>
+                            <i class="container__info-icon ti-pinterest"></i>
+                            <i class="container__info-icon ti-facebook"></i>
+                            <i class="container__info-icon ti-instagram"></i>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="grid__row">
+              <div class="container__time">
+                <div class="container__time-list">
+                  <div class="grid__col-2-4">
+                    <h1 class="container__time-item">452</h1>
+                    <p class="container__time-name">Tourist</p>
+                  </div>
+  
+                  <div class="grid__col-2-4">
+                    <h1 class="container__time-item">120</h1>
+                    <p class="container__time-name">Years</p>
+                  </div>
+  
+                  <div class="grid__col-2-4">
+                    <h1 class="container__time-item">283</h1>
+                    <p class="container__time-name">Cottages</p>
+                  </div>
+  
+                  <div class="grid__col-2-4">
+                    <h1 class="container__time-item">197</h1>
+                    <p class="container__time-name">Restaurants</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__row">
+            <div class="container__resorts">
+              <div class="container__resorts-heading">
+                <span class="container__resorts-label">Choose Your</span>
+                <p class="container__resorts-title">Winter Resort</p>
+                <p class="container__resorts-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor lorem ipsum.</p>
+              </div>
+
+              <div class="container__resorts-body">
+                  <div class="grid__col-2-3">
+                    <a href="" class="container__resorts-link">
+                      <div class="container__resorts-item">
+                        <img src="./assets/images/Slovenia.jpg" class="container__resorts-img" alt="">
+                        <h3 href="" class="container__resorts-name">Slovenia</h3>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-3">
+                    <a href="" class="container__resorts-link">
+                      <div class="container__resorts-item">
+                        <img src="./assets/images/Frances.jpg" class="container__resorts-img" alt="">
+                        <h3 href="" class="container__resorts-name">France</h3>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-3">
+                    <a href="" class="container__resorts-link">
+                      <div class="container__resorts-item">
+                        <img src="./assets/images/thuysi.jpg" class="container__resorts-img" alt="">
+                        <h3 href="" class="container__resorts-name">Switgerland</h3>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__list">
+            <div class="grid__row">
+            <div class="grid__col-2-4">
+              <div class="footer__list-item">
+                <img class="footer-img" src="./assets/images/logo.png" alt="">
+
+                <p class="footer-content">Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
+
+                <a href="mailto:setsail@qode.com" class="footer-link">
+                  <i class="footer-icon ti-email"></i>
+                  tuyen@quode.com
+                </a>
+
+                <a href="tel:15628675309" class="footer-link">
+                  <i class="footer-icon fas fa-phone-alt"></i>
+                  1 562 867 5309
+                </a>
+
+                <a href="" class="footer-link">
+                  <i class="footer-icon fas fa-map-marker-alt"></i>
+                  Broadway & Morris St, New York
+                </a>
+              </div>
+            </div>
+
+            <div class="grid__col-2-4">
+              <div class="footer__list-item">
+                <h5 class="footer-heading">Our Recent Posts</h5>
+
+                <div class="footer-item">
+                  <a href="" class="footer-heading__visit">Visit Thailand, Bali And China</a>
+                  <a href="" class="footer-heading__link">September 7,2016</a>
+                </div>
+                
+                <div class="footer-item">
+                  <a href="" class="footer-heading__visit">The Sound Of Our Junge</a>
+                  <a href="" class="footer-heading__link">September 7,2016</a>
+                </div>
+
+                <div class="footer-item">
+                  <a href="" class="footer-heading__visit">New Year, New Resolutions</a>
+                  <a href="" class="footer-heading__link">September 7,2016</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid__col-2-4">
+              <div class="footer__list-item">
+                <h5 class="footer-heading">Subscribe to our Newsletter</h5>
+                <p class="footer-text">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</p>
+                <div class="footer-item__login">
+                    <i class="footer-item__icon fas fa-user"></i>
+                    <input type="text" required class="footer-item__input" placeholder="Name">
+                </div>
+                
+                <div class="footer-item__login">
+                  <i class="footer-item__icon ti-email"></i>
+                  <input type="email" required class="footer-item__input" placeholder="Email">
+                </div>
+
+                <div class="footer-item__login">
+                  <a href="" class="footer-item__btn" type="submit">SUBSCRIBE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid__col-2-4">
+              <div class="footer__list-item">
+                <h5 class="footer-heading">Our Instagram</h5>
+                <p class="footer-text">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script>
-      // var slideIndex = 1;
-      // showDivs(slideIndex);
-
-      // function plusDivs(n) {
-      //   showDivs((slideIndex += n));
-      // }
-
-      // function showDivs(n) {
-      //   var i;
-      //   var x = document.getElementsByClassName("container__banner-img");
-      //   if (n > x.length) {
-      //     slideIndex = 1;
-      //   }
-      //   if (n < 1) {
-      //     slideIndex = x.length;
-      //   }
-      //   for (i = 0; i < x.length; i++) {
-      //     x[i].style.display = 'none';
-      //   }
-      //   x[slideIndex - 1].style.display = 'block';
-      // }
-
-      // var slideIndex = 0;
-      // carousel();
-
-      // function carousel() {
-      //   var i;
-      //   var x = document.getElementsByClassName("container__banner-img");
-      //   for (i = 0; i < x.length; i++) {
-      //     x[i].style.display = "none";
-      //   }
-      //   slideIndex++;
-      //   if (slideIndex > x.length) {
-      //     slideIndex = 1;
-      //   }
-      //   x[slideIndex - 1].style.display = "block";
-      //   setTimeout(carousel, 10000); // Change image every 2 seconds
-      // }
+      $(document).ready(function(){
+        $(".container__time-item").CounterUp({
+          delay:10,
+          time:1200
+        });
+      });
     </script>
+
   </body>
 </html>
