@@ -1,0 +1,93 @@
+/* PC */
+@media (max-width: 64em) {
+}
+
+/* Tablet */
+@media (max-width: 63.9375em) and (min-width: 46.25em) {
+  .header {
+    background-color: var(--skyblue-color);
+    margin: 0;
+  }
+  .header__logo {
+    color: var(--white-color);
+    text-align: center;
+    margin-left: 16px;
+  }
+
+  .header__navbar {
+    display: none;
+  }
+
+  .container__banner-body {
+    font-size: 6rem;
+  }
+  .container__banner-btn-left {
+    transform: translateY(-150%);
+  }
+  .container__banner-btn-right {
+    transform: translateY(-150%);
+  }
+  .container__tour {
+    overflow: hidden;
+  }
+  .grid__col-2-5 {
+    width: 50%;
+  }
+  .container__video-main {
+    width: 100%;
+  }
+
+  .container__resorts-name::after {
+    width: 175px;
+    height: 176px;
+    top: -90px;
+  }
+  .container__banner-body {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  .container__banner-text {
+    width: 60%;
+  }
+
+  .content__banner {
+    top: 20%;
+  }
+
+  .container__resorts-name {
+    font-size: 2.8rem;
+  }
+
+  .container__reviews-content {
+    display: block;
+  }
+
+  .tour-item {
+    margin: 12px 0 0 12px;
+  }
+
+  .grid__col-2-3 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .grid__col-2-3:nth-child(2) .container__reviews-item {
+    margin: 12px 0 !important;
+  }
+
+  .grid__col-2-4 {
+    width: 50%;
+  }
+
+  .footer__list-item {
+    margin-right: 12px;
+  }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+}
