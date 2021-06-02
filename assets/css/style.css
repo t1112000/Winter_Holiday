@@ -496,8 +496,20 @@
   position: absolute;
   left: 0;
   top: 0;
+  animation: zoom 9s ease-in;
 }
-.owl-dots,
+
+.owl-dot span {
+  margin-top: 48px !important;
+  background-color: var(--skyblue-color) !important;
+  opacity: 0.6;
+  width: 14px !important;
+  height: 14px !important;
+}
+.owl-dot span:hover {
+  opacity: 1;
+}
+
 .owl-nav {
   display: none;
 }
