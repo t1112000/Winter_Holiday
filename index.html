@@ -25,6 +25,8 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="main">
@@ -585,19 +587,15 @@
       <div class="container">
           <!-- Banner -->
           <div class="grid__row">
-            <div class="container__banner">
-              <div class="container__banner-item banner1">
+            
+            <div class="container__banner ">
+              <div class="container__banner-item banner1 item">
                   <img
-                    src="./assets/images/banner1.jpg"
+                    src="./assets/images/banner2.jpg"
                     alt=""
                     class="container__banner-img"
                   />
-                  <button type="radio" class="container__banner-btn-left">
-                    <i class="ti-angle-left"></i>
-                  </button>
-                  <button type="radio" class="container__banner-btn-right">
-                    <i class="ti-angle-right"></i>
-                  </button>
+                  
                   <div class="content__banner">
                     <h2 class="container__banner-heading">From Alps</h2>
                     <h1 class="container__banner-body">Snow Adventure</h1>
@@ -608,9 +606,9 @@
                   </div>
               </div>
     
-              <div class="container__banner-item banner2">
+              <div class="container__banner-item banner2 item">
                 <img
-                  src="./assets/images/banner2.jpg"
+                  src="./assets/images/banner1.jpg"
                   alt=""
                   class="container__banner-img"
                 />
@@ -628,217 +626,205 @@
           
           <!-- Tour -->
           <div class="grid__row">
-            <div class="container__tour" style="overflow: hidden;">
-                <div class="grid__row">
-                  <div class="grid__col-2-5">
-                    <div class="tour-item">
-                      <div class="zoom_tour-img">
-                        <img src="./assets/images/6.jpg" alt="" class="tour-img" />
-                      </div>
-                      <div class="tour-list">
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon far fa-calendar"></i>
-                          1
+            <div class="container__tour " style="overflow: hidden;">
+                <div class="grid__row owl-carousel owl-theme">
+                  
+                  <div class="tour-item item">
+                    <div class="zoom_tour-img">
+                      <img src="./assets/images/6.jpg" alt="" class="tour-img" />
+                    </div>
+                    <div class="tour-list">
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon far fa-calendar"></i>
+                        1
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-male"></i>
+                        13+
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
+                        Skiing
+                      </span>
+                    </div>
+  
+                    <div class="tour-content">
+                      <h4 class="tour-item__heading">Winter Action</h4>
+                      <p class="tour-item__label"
+                        >Lorem ipsum dolor sit amet, consecteuer adipiscing
+                        ei...</span
+                      >
+                      <div class="tour-item__content">
+                        <span class="tour-item__label-price">$960</span>
+                        <span class="tour-item__label-rate">
+                          <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
+                          6.0
                         </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-male"></i>
-                          13+
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
-                          Skiing
-                        </span>
-                      </div>
-    
-                      <div class="tour-content">
-                        <h4 class="tour-item__heading">Winter Action</h4>
-                        <p class="tour-item__label"
-                          >Lorem ipsum dolor sit amet, consecteuer adipiscing
-                          ei...</span
-                        >
-                        <div class="tour-item__content">
-                          <span class="tour-item__label-price">$960</span>
-                          <span class="tour-item__label-rate">
-                            <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
-                            6.0
-                          </span>
-                          <span class="tour-item__label-quality">Good</span>
-                        </div>
+                        <span class="tour-item__label-quality">Good</span>
                       </div>
                     </div>
                   </div>
-    
-                  <div class="grid__col-2-5">
-                    <div class="tour-item">
-                      <div class="zoom_tour-img">
-                        <img src="./assets/images/4.jpg" alt="" class="tour-img" />
-                      </div>
-    
-                      <div class="tour-list">
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon far fa-calendar"></i>
-                          1
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-male"></i>
-                          13+
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
-                          Skiing
-                        </span>
-                      </div>
-    
-                      <div class="tour-content">
-                        <h4 class="tour-item__heading">Magic Of Italy</h4>
-                        <p class="tour-item__label"
-                          >Lorem ipsum dolor sit amet, consecteuer adipiscing
-                          ei...</span
-                        >
-                        <div class="tour-item__content">
-                          <span class="tour-item__label-price">$1000</span>
-                          <span class="tour-item__label-rate">
-                            <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
-                            6.7
-                          </span>
-                          <span class="tour-item__label-quality">Good</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="grid__col-2-5">
-                    <div class="tour-item">
-                      <div class="zoom_tour-img">
-                        <img src="./assets/images/3.jpg" alt="" class="tour-img" />
-                      </div>
-    
-                      <div class="tour-list">
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon far fa-calendar"></i>
-                          1
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-male"></i>
-                          13+
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
-                          Skiing
-                        </span>
-                      </div>
-    
-                      <div class="tour-content">
-                        <h4 class="tour-item__heading">Skiing In Alps</h4>
-                        <p class="tour-item__label"
-                          >Lorem ipsum dolor sit amet, consecteuer adipiscing
-                          ei...</span
-                        >
-                        <div class="tour-item__content">
-                          <span class="tour-item__label-price">$450</span>
-                          <span class="tour-item__label-rate">
-                            <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
-                            6.0
-                          </span>
-                          <span class="tour-item__label-quality">Good</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="grid__col-2-5">
-                    <div class="tour-item">
-                      <div class="zoom_tour-img">
-                        <img src="./assets/images/2.jpg" alt="" class="tour-img" />
-                      </div>
-    
-                      <div class="tour-list">
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon far fa-calendar"></i>
-                          1
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-male"></i>
-                          13+
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
-                          Skiing
-                        </span>
-                      </div>
-    
-                      <div class="tour-content">
-                        <h4 class="tour-item__heading">Snow Surfing</h4>
-                        <p class="tour-item__label"
-                          >Lorem ipsum dolor sit amet, consecteuer adipiscing
-                          ei...</span
-                        >
-                        <div class="tour-item__content">
-                          <span class="tour-item__label-price">$720</span>
-                          <span class="tour-item__label-rate">
-                            <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
-                            7.3
-                          </span>
-                          <span class="tour-item__label-quality">Superb</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="grid__col-2-5">
-                    <div class="tour-item" style="margin-right: 0;">
-                      <div class="zoom_tour-img">
-                        <img src="./assets/images/1.jpg" alt="" class="tour-img" />
-                      </div>
-    
-                      <div class="tour-list">
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon far fa-calendar"></i>
-                          1
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-male"></i>
-                          13+
-                        </span>
-    
-                        <span class="tour-list__item">
-                          <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
-                          Skiing
-                        </span>
-                      </div>
-    
-                      <div class="tour-content">
-                        <h4 class="tour-item__heading">Kids Ski School</h4>
-                        <p class="tour-item__label"
-                          >Lorem ipsum dolor sit amet, consecteuer adipiscing
-                          ei...</span
-                        >
-                        <div class="tour-item__content">
-                          <span class="tour-item__label-price">$1600</span>
-                          <span class="tour-item__label-rate">
-                            <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
-                            6.7
-                          </span>
-                          <span class="tour-item__label-quality">Good</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="grid__row">
-                  <div class="container__tour-btn">
-                    <button id="radio1" class="tour-btn"></button>
-                    <button id="radio1" class="tour-btn"></button>
+                
+                  <div class="tour-item item">
+                    <div class="zoom_tour-img">
+                      <img src="./assets/images/4.jpg" alt="" class="tour-img" />
+                    </div>
+  
+                    <div class="tour-list">
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon far fa-calendar"></i>
+                        1
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-male"></i>
+                        13+
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
+                        Skiing
+                      </span>
+                    </div>
+  
+                    <div class="tour-content">
+                      <h4 class="tour-item__heading">Magic Of Italy</h4>
+                      <p class="tour-item__label"
+                        >Lorem ipsum dolor sit amet, consecteuer adipiscing
+                        ei...</span
+                      >
+                      <div class="tour-item__content">
+                        <span class="tour-item__label-price">$1000</span>
+                        <span class="tour-item__label-rate">
+                          <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
+                          6.7
+                        </span>
+                        <span class="tour-item__label-quality">Good</span>
+                      </div>
+                    </div>
+                  </div>
+
+                
+                  <div class="tour-item item">
+                    <div class="zoom_tour-img">
+                      <img src="./assets/images/3.jpg" alt="" class="tour-img" />
+                    </div>
+  
+                    <div class="tour-list">
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon far fa-calendar"></i>
+                        1
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-male"></i>
+                        13+
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
+                        Skiing
+                      </span>
+                    </div>
+  
+                    <div class="tour-content">
+                      <h4 class="tour-item__heading">Skiing In Alps</h4>
+                      <p class="tour-item__label"
+                        >Lorem ipsum dolor sit amet, consecteuer adipiscing
+                        ei...</span
+                      >
+                      <div class="tour-item__content">
+                        <span class="tour-item__label-price">$450</span>
+                        <span class="tour-item__label-rate">
+                          <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
+                          6.0
+                        </span>
+                        <span class="tour-item__label-quality">Good</span>
+                      </div>
+                    </div>
+                  </div>
+
+                
+                  <div class="tour-item item">
+                    <div class="zoom_tour-img">
+                      <img src="./assets/images/2.jpg" alt="" class="tour-img" />
+                    </div>
+  
+                    <div class="tour-list">
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon far fa-calendar"></i>
+                        1
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-male"></i>
+                        13+
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
+                        Skiing
+                      </span>
+                    </div>
+  
+                    <div class="tour-content">
+                      <h4 class="tour-item__heading">Snow Surfing</h4>
+                      <p class="tour-item__label"
+                        >Lorem ipsum dolor sit amet, consecteuer adipiscing
+                        ei...</span
+                      >
+                      <div class="tour-item__content">
+                        <span class="tour-item__label-price">$720</span>
+                        <span class="tour-item__label-rate">
+                          <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
+                          7.3
+                        </span>
+                        <span class="tour-item__label-quality">Superb</span>
+                      </div>
+                    </div>
+                  </div>
+
+                
+                  <div class="tour-item item">
+                    <div class="zoom_tour-img">
+                      <img src="./assets/images/1.jpg" alt="" class="tour-img" />
+                    </div>
+  
+                    <div class="tour-list">
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon far fa-calendar"></i>
+                        1
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-male"></i>
+                        13+
+                      </span>
+  
+                      <span class="tour-list__item">
+                        <i class="tour-list__item-icon fas fa-map-marker-alt"></i>
+                        Skiing
+                      </span>
+                    </div>
+  
+                    <div class="tour-content">
+                      <h4 class="tour-item__heading">Kids Ski School</h4>
+                      <p class="tour-item__label"
+                        >Lorem ipsum dolor sit amet, consecteuer adipiscing
+                        ei...</span
+                      >
+                      <div class="tour-item__content">
+                        <span class="tour-item__label-price">$1600</span>
+                        <span class="tour-item__label-rate">
+                          <i class="tour-item__label-rate-icon fas fa-star-half-alt"></i>
+                          6.7
+                        </span>
+                        <span class="tour-item__label-quality">Good</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -870,8 +856,8 @@
                 <p class="container__reviews-label">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum</p>
               </div>
 
-                <div class="container__reviews-content">
-                  <div class="grid__col-2-3">
+                <div class="container__reviews-content owl-carousel owl-theme">
+                  <div class="item">
                       <div class="container__reviews-item">
                         <img class="container__reviews-img" src="./assets/images/logo-people5.png" alt="">
       
@@ -888,8 +874,8 @@
                       </div>
                   </div>
 
-                  <div class="grid__col-2-3">
-                    <div class="container__reviews-item ml-24 mr-24">
+                  <div class="item">
+                    <div class="container__reviews-item">
                       <img class="container__reviews-img" src="./assets/images/logo-people7.png" alt="">
     
                       <div class="container__reviews-list">
@@ -906,7 +892,7 @@
                     </div>
                   </div>
 
-                  <div class="grid__col-2-3">
+                  <div class="item">
                     <div class="container__reviews-item">
                       <img class="container__reviews-img" src="./assets/images/logo-people4.png" alt="">
 
@@ -1206,14 +1192,26 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      $(document).ready(function(){
-        $(".container__time-item").CounterUp({
-          delay:10,
-          time:1200
-        });
-      });
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:40,
+          autoplay:true,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+          }
+      })
     </script>
-
   </body>
 </html>

@@ -90,4 +90,15 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+  .grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .grid__col-2-5 {
+    width: 100%;
+  }
+  .grid__col-2-3 {
+    width: 100%;
+  }
 }
