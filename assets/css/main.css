@@ -33,6 +33,7 @@ html {
 
 .grid__full {
   width: 100%;
+  display: flex;
 }
 
 .grid__row {

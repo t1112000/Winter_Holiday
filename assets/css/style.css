@@ -438,11 +438,7 @@
   display: none;
 }
 
-.nav__input:checked ~ .nav__overlay {
-  display: block;
-}
-
-.nav__input:checked ~ .mobile_navbar {
+.active {
   opacity: 1;
   display: block;
   transform: translateX(0);
@@ -634,6 +630,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-right: 24px;
   border-radius: 2px;
+  width: 20%;
 }
 
 .tour-list {
@@ -797,6 +794,10 @@
   padding: 40px 48px;
   background-color: var(--white-color);
   border-radius: 6px;
+}
+
+.container__reviews-item:nth-child(2) {
+  margin: 0 24px;
 }
 
 .container__reviews-content {
@@ -1092,21 +1093,6 @@
 
 .container__resorts-link {
   text-decoration: none;
-}
-
-.container__resorts-name::after {
-  content: "";
-  position: absolute;
-  width: 354px;
-  height: 354px;
-  left: 50%;
-  top: -174px;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  color: var(--white-color);
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: -1;
 }
 
 .container__resorts-name {
