@@ -101,6 +101,36 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+  .container__holiday-heading {
+    width: 100%;
+  }
+  .container__holiday-title {
+    font-size: 5rem;
+  }
+  .container__holiday-item {
+    padding: 0;
+  }
+  .container__holiday-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container__banner-text {
+    width: 100%;
+  }
+  .container__reviews-heading {
+    width: 100%;
+  }
+  .container__time-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container__resorts-text {
+    width: 100%;
+  }
+  .container__resorts-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .grid__row {
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +186,7 @@
   }
 
   .container__banner-body {
-    font-size: 8rem;
+    font-size: 4.5rem;
   }
 
   .header {
@@ -174,5 +204,18 @@
 
   .container__reviews-item:nth-child(2) {
     margin: 12px 0;
+  }
+  .container__banner-body {
+    margin: 0 0 16px 0;
+  }
+  .button {
+    top: 100%;
+    transform: translateY(20%);
+  }
+
+  .prev,
+  .next {
+    width: 50px;
+    height: 50px;
   }
 }

@@ -478,6 +478,7 @@
 }
 
 .container__banner-item {
+  display: none;
   height: 540px;
   width: 100%;
   position: absolute;
@@ -548,6 +549,54 @@
 
 .banner2 {
   animation: Slider2 12s linear infinite;
+}
+
+.active {
+  display: block;
+}
+
+.container {
+  position: relative;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  z-index: 999;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  top: 250px;
+  margin: 0 24px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: var(--skyblue-color);
+}
+
+.prev:hover i,
+.next:hover i {
+  color: var(--white-color);
+}
+
+.prev i,
+.next i {
+  color: var(--skyblue-color);
+  font-size: 2rem;
+}
+
+.next {
+  right: 0;
 }
 
 .container__banner-btn-left {
@@ -836,34 +885,6 @@
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
-}
-
-.container__reviews-btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 37px;
-}
-
-.reviews-btn {
-  padding: 6px;
-  background-color: var(--skyblue-color);
-  border-radius: 50%;
-  opacity: 0.5;
-  outline: none;
-  border: none;
-}
-
-.reviews-btn:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-
-.reviews-btn:focus {
-  opacity: 1;
-}
-
-.reviews-btn:nth-child(2) {
-  margin: 0 16px;
 }
 
 /* Holiday */
