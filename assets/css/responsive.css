@@ -1,9 +1,15 @@
 /* PC */
-@media (max-width: 64em) {
+@media (min-width: 64em) {
+  .menu {
+    display: none;
+  }
 }
 
 /* Tablet */
 @media (max-width: 63.9375em) and (min-width: 46.25em) {
+  .menu {
+    display: block;
+  }
   .header {
     background-color: var(--skyblue-color);
     margin: 0;
@@ -217,5 +223,8 @@
   .next {
     width: 50px;
     height: 50px;
+  }
+  .mobile_navbar {
+    top: calc(10% + 6px);
   }
 }

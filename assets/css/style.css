@@ -371,7 +371,7 @@
 
 .mobile_navbar {
   position: absolute;
-  top: calc(8% + 2px);
+  top: calc(8% - 2px);
   right: 0;
   bottom: 0;
   width: 320px;
