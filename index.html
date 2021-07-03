@@ -25,6 +25,7 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="main">
@@ -838,7 +839,7 @@
 
           <!-- Video -->
           <div class="grid__row">
-            <div class="container__video">
+            <div class="container__video" data-aos="zoom-in-down">
               <div class="container__video-main">
                 <div class="container__video-heading">
                   <span class="container__video-label">Try Now</span>
@@ -856,13 +857,13 @@
           <!-- Reviews -->
           <div class="grid__row">
             <div class="container__reviews">
-              <div class="container__reviews-heading">
+              <div class="container__reviews-heading" data-aos="zoom-in-down">
                 <h1 class="container__reviews-title">Top Reviews</h1>
                 <p class="container__reviews-label">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum</p>
               </div>
 
-                <div class="container__reviews-content">
-                      <div class="container__reviews-item">
+                <div class="container__reviews-content" >
+                      <div class="container__reviews-item" data-aos="zoom-in-left" data-aos-duration="1000">
                         <img class="container__reviews-img" src="./assets/images/logo-people5.png" alt="">
       
                         <div class="container__reviews-list">
@@ -877,7 +878,7 @@
                         </div>
                       </div>
 
-                    <div class="container__reviews-item">
+                    <div class="container__reviews-item" data-aos="zoom-in-up" data-aos-duration="1000">
                       <img class="container__reviews-img" src="./assets/images/logo-people7.png" alt="">
     
                       <div class="container__reviews-list">
@@ -893,7 +894,7 @@
                       </div>
                     </div>
 
-                    <div class="container__reviews-item">
+                    <div class="container__reviews-item" data-aos="zoom-in-down" data-aos-duration="1000">
                       <img class="container__reviews-img" src="./assets/images/logo-people4.png" alt="">
 
                       <div class="container__reviews-list">
@@ -915,12 +916,12 @@
           <!-- Holiday -->
           <div class="grid__row">
             <div class="container__holiday">
-              <div class="container__holiday-heading">
+              <div class="container__holiday-heading" data-aos="zoom-in-down">
                 <span class="container__holiday-label">Enjoy Your</span>
                 <h1 class="container__holiday-title">Winter Holiday</h1>
                 <p class="container__holiday-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor lorem ipsum.</p>
               </div>
-              <div class="container__holiday-content">
+              <div class="container__holiday-content" data-aos="zoom-in-up">
                 <div class="grid__col-2-4">
 
                   <div class="container__holiday-item">
@@ -1071,13 +1072,13 @@
 
           <div class="grid__row">
             <div class="container__resorts">
-              <div class="container__resorts-heading">
+              <div class="container__resorts-heading" data-aos="zoom-in-down">
                 <span class="container__resorts-label">Choose Your</span>
                 <p class="container__resorts-title">Winter Resort</p>
                 <p class="container__resorts-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor lorem ipsum.</p>
               </div>
 
-              <div class="container__resorts-body">
+              <div class="container__resorts-body" data-aos="zoom-in-up">
                   <div class="grid__col-2-3">
                     <a href="" class="container__resorts-link">
                       <div class="container__resorts-item">
@@ -1186,5 +1187,9 @@
       </footer>
     </div>
     <script type="module" src="./assets/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

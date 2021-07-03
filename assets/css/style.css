@@ -831,7 +831,7 @@
 }
 
 .container__reviews-img {
-  width: 50% !important;
+  width: 25%;
   height: 107px;
   border-radius: 50%;
   margin-right: 21px;
@@ -846,7 +846,7 @@
 }
 
 .container__reviews-item:nth-child(2) {
-  margin: 0 24px;
+  margin: 0 48px;
 }
 
 .container__reviews-content {
