@@ -3,14 +3,18 @@
 /* Header Logo */
 .header {
   height: 80px;
-  margin: 0 20px;
+  margin-top: -80px;
   justify-content: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
 }
 
 .header__logo-img {
   height: 47px;
   width: 147px;
-  margin: 20px 0;
+  margin: 20px 0 0 16px;
 }
 
 /* Header Navbar */
@@ -471,6 +475,7 @@
 /* Banner */
 .container {
   position: relative;
+  margin-top: 80px;
 }
 
 .container__banner {
@@ -568,7 +573,7 @@
 
 .prev,
 .next {
-  z-index: 999;
+  z-index: 990;
   outline: none;
   border-radius: 50%;
   border: none;

@@ -12,7 +12,7 @@
   }
   .header {
     background-color: var(--skyblue-color);
-    margin: 0;
+    margin-top: -80px;
   }
   .header__logo {
     color: var(--white-color);
@@ -197,7 +197,7 @@
 
   .header {
     background-color: var(--skyblue-color);
-    margin: 0;
+    margin-top: -80px;
   }
 
   .header__logo {
